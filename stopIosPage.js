@@ -2,7 +2,7 @@
  * @author ZhuKaiFeng
  * @param  {scrollId} String,Element id
  * @version 1.1
- * @example var test = new stopIosPage({ scrollId:"test"});...
+ * @example var test = new stopIosPage({ scrollId:"test"})
  */   
     ; (function (window, document) {
         var stopIosPage = function (options) {
