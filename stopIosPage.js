@@ -6,7 +6,7 @@
  */   
     ; (function (window, document) {
         var stopIosPage = function (options) {
-
+            
             if (!(this instanceof stopIosPage)) {
                 return new stopIosPage;
             }
@@ -30,12 +30,9 @@
         stopIosPage.prototype = {
             init: function () {
                 document.addEventListener('touchstart', function(evt){                   
-                    console.log("touchstart");
                     this.touchStartFunc(evt);
                 }.bind(this), false);
-                console.log(this._ss);
-                this._ss.addEventListener('touchmove',function(ev){   
-                    console.log("touchmove");                
+                this._ss.addEventListener('touchmove',function(ev){                
                     this.areaTouchmove(ev)
                 }.bind(this),false);
             },
